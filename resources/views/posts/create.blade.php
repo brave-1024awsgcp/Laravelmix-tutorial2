@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', 'New Post')
+@section('title', 'Task')
 
 @section('content')
 <h1>
@@ -9,15 +9,12 @@
 <form method="post" action="{{ url('/posts') }}">
   {{ csrf_field() }}
   <p>
+  {{Form::select('category', [ 'BUSINESS' => 'BUSINESS' ,'NEWS' => 'NEWS', 'TECH' => 'TECH'])}}
+  </p>
+  <p>
     <input type="text" name="title" placeholder="title">
     @if ($errors->has('title'))
     <span class="error">{{ $errors->first('title') }}</span>
-    @endif
-  </p>
-  <p>
-    <textarea name="category" placeholder="category"></textarea>
-    @if ($errors->has('category'))
-    <span class="error">{{ $errors->first('category') }}</span>
     @endif
   </p>
   <p>
@@ -27,7 +24,7 @@
     @endif
   </p>
   <p>
-    <input type="submit" value="Add">
+    <input type="submit" value="追加">
   </p>
 </form>
 @endsection

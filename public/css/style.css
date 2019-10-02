@@ -42,3 +42,6 @@
       .edit {
         font-size: 12px;
       }
+      Form::select{
+        height: 120px;
+      }

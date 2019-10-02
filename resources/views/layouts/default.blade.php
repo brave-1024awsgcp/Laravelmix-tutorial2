@@ -2,8 +2,9 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>Blog</title>
+  <title>tasklist</title>
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
 </head>
 <body>
   <div class="container">

@@ -5,7 +5,7 @@
 @section('content')
 <h1>
   <a href="{{ url('/') }}" class="header-menu">Back</a>
-  Edit Post
+  予定編集
 </h1>
 <form method="post" action="{{ url('/posts', $post->id) }}">
   {{ csrf_field() }}
@@ -29,7 +29,7 @@
     @endif
   </p>
   <p>
-    <input type="submit" value="Update">
+    <input type="submit" value="更新">
   </p>
 </form>
 @endsection
