@@ -3,6 +3,7 @@
 @section('title', 'Task')
 
 @section('content')
+
 <h1>
   <a href="{{ url('/') }}" class="header-menu">戻る</a>
 </h1>

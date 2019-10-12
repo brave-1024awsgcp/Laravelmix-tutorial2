@@ -2,11 +2,11 @@
       font-family: Verdana, sans-serif;
       background-image: url(../img/becter.jpg);
       font-size: 25px;
-      padding-bottom: 10px;
+      padding-bottom: 25px;
       margin-bottom: 25px;
       border-bottom: 1px solid #CCC;
+      
      }
-
   
     .container {
         width: 400px;
@@ -41,7 +41,4 @@
       
       .edit {
         font-size: 12px;
-      }
-      Form::select{
-        height: 120px;
       }

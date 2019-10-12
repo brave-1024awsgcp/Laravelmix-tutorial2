@@ -52,15 +52,34 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
+body,h1,h2 {
+  font-family: Verdana, sans-serif;
+  background-image: url(../img/becter.jpg);
+  font-size: 25px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  text-align: center;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
-  text-align: center;
-  background-image: url(../img/becter.jpg);
+  .error_txt{margin-bottom: 10px; display: block; color: #f00; font-size: 13px;}
+
+.foundation-example__ex-wrapper{
+    background-color: lightblue;
+}
+.foundation-example__in-wrapper{
+    margin: auto;
+    max-width: 960px;
+    background-image: url(../img/becter.jpg);
+    padding: 30px;
+}
+
+.foundation-example__title{
+    font-size: 40px;
+    margin-bottom: 25px;
+
+  }
+  border-bottom: 1px solid #CCC;
+  }
 }
 
 [tabindex="-1"]:focus {
@@ -10257,58 +10276,50 @@ img {
 /* PC向けCSS */
 
 @charset "UTF-8";
-.id {
-  font-family: Verdana, sans-serif;
-  font-size: 8px;
-}
 
-.category {
+body,h1,h2 {
   font-family: Verdana, sans-serif;
-  font-size: 8px;
-}
+  background-image: url(../img/becter.jpg);
+  font-size: 25px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #CCC;
+ }
 
-.fulstack {
-  font-family: Verdana, sans-serif;
-  font-size: 8px;
-}
-
-.frontend {
-  font-family: Verdana, sans-serif;
-  font-size: 8px;
-}
-
-.sqls {
-  font-family: Verdana, sans-serif;
-  font-size: 8px;
-}
-
-.gengo {
-  font-family: Verdana, sans-serif;
-  font-size: 10px;
-}
-
-.serveres {
-  font-family: Verdana, sans-serif;
-  font-size: 8px;
-}
-
-.os {
-  font-family: Verdana, sans-serif;
-  font-size: 10px;
-}
-
-.jyobs {
-  font-family: Verdana, sans-serif;
-  font-size: 8px;
-}
 
 .container {
-  width: 400px;
-  margin: 20px auto;
-}
-
-.del {
-  font-size: 12px;
-}
-
-}
+    width: 400px;
+    margin: 20px auto;
+  }
+  
+  
+  ul > li {
+    margin-bottom: 5px;
+  }
+  
+  .header-menu {
+    font-size: 12px;
+    font-weight: normal;
+    float: right;
+  }
+  
+  input[type="text"], textarea {
+    box-sizing: border-box;
+    width: 400px;
+    padding: 5px;
+  }
+  
+  textarea {
+    height: 120px;
+  }
+  
+  .error {
+    font-size: 12px;
+    color: tomato;
+  }
+  
+  .edit {
+    font-size: 12px;
+  }
+ 
+  
