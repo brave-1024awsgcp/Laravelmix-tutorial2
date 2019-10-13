@@ -1,0 +1,152 @@
+
+@media screen and (max-width : 400px){
+html,body,div,ul,li,p,img{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: sans-serif;
+}
+html * {
+	box-sizing: border-box;
+}
+body {
+	margin: 0 0 0 0;
+	background-color: #99CCFF;
+}
+.wrapper {
+	margin: 0 auto 0 auto;
+	max-width: 960px;
+}
+h2 {
+	color: #3f5170;
+	font-size: 22px;
+	border-bottom: 3px dotted #3f5170;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+html,body{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	text-align: left;
+}
+
+#photolist{
+	position: relative;
+	max-width: 960px;
+	margin: 24px auto;
+	padding: 0;
+}
+
+#photolist li{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	list-style: none;
+}
+
+img{
+	border: none;
+}
+
+body{
+	font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	text-align: center;
+}
+
+#main{
+	width: 960px;
+	margin: 80px auto 0;
+	text-align: left;
+}
+@media screen and (max-width: 980px) {
+	#main{
+		width: 100%;
+	}
+}
+@media print, screen and (min-width: 980px) {
+	#main{
+		width: 960px;
+	}
+}
+
+#slideContent{
+	position: relative;
+}
+
+#slideBox{
+	width: 100%;
+}
+
+#slideBox ul{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+#slideBox li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 100%;
+	list-style: none;
+}
+
+#slideBox li img{
+	width: 100%;
+}
+
+#slideContent #control{
+	display: none;
+}
+
+#slideContent #control p{
+	position: absolute;
+	top: 50%;
+	margin: -19px 0 0;
+}
+
+#slideContent #control #prev{
+	left: 12px;
+}
+
+#slideContent #control #next{
+	right: 12px;
+}
+
+#slideContent #control p a{
+	cursor: pointer;
+}
+
+#slideBox ul:after{
+  content:".";
+  display:block;
+  clear:both;
+  height:0;
+  visibility:hidden;
+}
+
+#slideBox ul{
+  display:inline-block;
+}
+
+* html #slideBox ul{
+  height:1%;
+}
+
+#slideBox ul{
+  display:block;
+}

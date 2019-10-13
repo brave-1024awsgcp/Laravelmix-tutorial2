@@ -1,0 +1,197 @@
+﻿Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@Old-rever-brave 
+1
+00Old-rever-brave/Laravelmix-tutorial
+ Code Issues 0 Pull requests 0 Projects 0 Wiki Security Insights Settings
+Laravelmix-tutorial/public/css/style1.css
+@Old-rever-brave Old-rever-brave Initial Commit
+1f6dce7 4 days ago
+343 lines (302 sloc)  5.94 KB
+ 
+/* PC向けCSS */
+
+@charset "UTF-8";
+
+/*** common setting ***/
+
+body,a {
+    color: #000000;
+    
+}
+
+h1 {
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    background-image: url(../img/images.jpg);
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0 5px rgba(31,50,53,0.8), 0 0 5px rgba(31,50,53,0.3);
+    margin: 0;
+}
+h2 {
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3","ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-size: 2.6rem;
+    letter-spacing: 0rem;
+    background-image: url(../img/images.jpg);
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  background-image: url(../img/images.jpg);
+  font-size: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #CCC;
+  
+ }
+
+a:hover {
+    opacity: 0.6;
+}
+.contentWrapper {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header {
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+header a {
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+header ul {
+    display: flex;
+    margin: 0;
+    padding: 30px;
+}
+header li {
+    padding: 0 30px;
+}
+header nav {
+    position: absolute;
+    right: 0;
+}
+
+header .contentWrapper {
+    padding-top: 300px;
+}
+
+.flex {
+    display: flex;
+}
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+
+/** Framework **/
+
+#Framework {
+    background-image: url(../img/images.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Framework p {
+    font-size: 1.5rem;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+                 "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+#Framework img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+
+/* スライドショー*/
+.slideshow {
+  width: 500px;
+  margin: auto;
+}
+
+.slideshow img {
+  width: 100%;
+}
+
+
+@media screen and (max-width: 780px) {
+/* ここよりスマホ向けCSS */
+    /*** common setting ***/
+/* PC向けCSS */
+
+@charset "UTF-8";
+
+/*** common setting ***/
+
+
+body,h1,h2 {
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0 5px rgba(31,50,53,0.8), 0 0 5px rgba(31,50,53,0.3);
+    margin: 0;
+    background-image: url(../img/Laravelmix6.jpg);
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3","ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-size: 2.6rem;
+    letter-spacing: 0.5rem;
+    color: #000000;
+}
+a:hover {
+    opacity: 0.6;
+}
+.container {
+  width: 400px;
+  margin: 20px auto;
+}
+
+
+ul > li {
+  margin-bottom: 5px;
+}
+
+.header-menu {
+  font-size: 12px;
+  font-weight: normal;
+  float: right;
+}
+
+input[type="text"], textarea {
+  box-sizing: border-box;
+  width: 400px;
+  padding: 5px;
+}
+
+textarea {
+  height: 120px;
+}
+
+.error {
+  font-size: 12px;
+  color: tomato;
+}
+
+.edit {
+  font-size: 12px;
+}

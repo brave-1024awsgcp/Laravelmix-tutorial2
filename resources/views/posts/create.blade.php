@@ -10,22 +10,17 @@
 <form method="post" action="{{ url('/posts') }}">
   {{ csrf_field() }}
   <p>
-  {{Form::select('category', [ 'BUSINESS' => 'BUSINESS' ,'NEWS' => 'NEWS', 'TECH' => 'TECH'])}}
+  {{Form::select('category', [ 'AWS' => 'AWS',  'Laravel' => 'Laravel', 'Vue.js' => 'Vue.js', 'GCP' => 'GCP', ])}}
   </p>
   <p>
-    <input type="text" name="title" placeholder="title">
-    @if ($errors->has('title'))
-    <span class="error">{{ $errors->first('title') }}</span>
-    @endif
-  </p>
+    {{Form::select('title', [ 'コーディング' => 'コーディング',  '構築' => '構築', '設計' => '設計', '申し込み' => '申し込み', ])}}  </p>
   <p>
-    <textarea name="body" placeholder="body"></textarea>
-    @if ($errors->has('body'))
-    <span class="error">{{ $errors->first('body') }}</span>
-    @endif
+    {{Form::select('body', [ '完了' => '完了' ,'8割完了' => '8割完了',  '5割完了' => '5割完了', '未着手' => '未着手' ])}}  </p>
   </p>
   <p>
     <input type="submit" value="追加">
   </p>
 </form>
+<script src="/js/main.js"></script>
+
 @endsection
