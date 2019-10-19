@@ -10,7 +10,7 @@
 <form method="post" action="{{ url('/posts') }}">
   {{ csrf_field() }}
   <p>
-  {{Form::select('category', [ 'AWS' => 'AWS',  'Laravel' => 'Laravel', 'Vue.js' => 'Vue.js', 'GCP' => 'GCP', ])}}
+  {{Form::select('category', [ 'AWS' => 'AWS',  'Laravel' => 'Laravel', 'Springboot' => 'Springboot', 'GCP' => 'GCP', ])}}
   </p>
   <p>
     {{Form::select('title', [ 'コーディング' => 'コーディング',  '構築' => '構築', '設計' => '設計', '申し込み' => '申し込み', ])}}  </p>

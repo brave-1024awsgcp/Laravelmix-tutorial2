@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Post;
 use App\Http\Requests\PostRequest;
 
@@ -14,6 +15,10 @@ class PostsController extends Controller
        return view('posts.index')->with('posts', $posts);
     }
 
+    public function __construct()
+    {
+        $this->middleware('guest')->except('logout');
+    }
     
     public function show(Post $post) {
       return view('posts.show')->with('post', $post);
