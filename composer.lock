@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee74d63d21eb9a7877a87c5fa11384be",
+    "content-hash": "58287a74331a28c5d96cf493cb9549c2",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -679,7 +679,7 @@
         },
         {
             "name": "laravelcollective/html",
-            "version": "dev-master",
+            "version": "v6.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LaravelCollective/html.git",

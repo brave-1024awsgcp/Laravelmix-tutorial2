@@ -8,11 +8,12 @@
   <p><a href="/posts/create">MYタスク新規登録</a></p>   
         <table border ="1" align ="center">       
   <tr>
-    <th>NO</th><th>task</th><th>詳細</th><th>ステータス変更</th>
+    <th>NO</th><th>task</th><th>詳細</th><th>状況</th><th>ステータス</th>
     </tr>
     @foreach ($posts as $post)
     <tr>
     <td>{{ $post->id}}</td>
+    <td>{{ $post->category}}</td>
     <td>{{ $post->title }}</td>
     <td>{{ $post->body }}</td>
     <td><a href="{{ action('PostsController@edit', $post) }}" class="edit">[更新]</a>
